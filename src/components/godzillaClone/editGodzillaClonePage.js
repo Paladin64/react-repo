@@ -130,7 +130,7 @@ class EditGodzillaClone extends Component {
     console.log(godzillaClone);
 
     axios
-      .post("http://localhost:5000/godzilla-clone-list/add", godzillaClone)
+      .post("http://localhost:5000/godzilla_clones/add", godzillaClone)
       .then((res) => console.log(res.data));
 
     window.location = "/godzilla-clone-list";
