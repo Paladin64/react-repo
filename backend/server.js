@@ -25,7 +25,7 @@ connection.once("open", () => {
 
 const godzillaCloneRouter = require("./routes/godzillaClones");
 
-app.use("/godzilla-clones", godzillaCloneRouter);
+app.use("/godzilla_clones", godzillaCloneRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
