@@ -57,7 +57,7 @@ class GodzillaCloneListDisplay extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5000/godzilla-clones/")
+      .get("http://localhost:5000/godzilla_clones/")
       .then((response) => {
         this.setState({ godzillaClones: response.data });
       })
@@ -80,7 +80,7 @@ class GodzillaCloneListDisplay extends Component {
 
   deleteGodzillaClone(id) {
     axios
-      .delete("http://localhost:5000/godzilla-clone-list/" + id)
+      .delete("http://localhost:5000/godzilla_clones/" + id)
       .then((res) => console.log(res.data));
     this.setState({
       godzillaClones: this.state.godzillaClones.filter((el) => el._id !== id)
